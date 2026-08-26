@@ -68,9 +68,13 @@ Requires a GPU with at least ~16 GB VRAM for the full 4-channel model. Python 3.
 
 ## 3. Data format
 
-> The original patient data is **private** and is **not** distributed here. Only the
-> expected format is documented below so you can prepare your own (or an
-> anonymised) dataset.
+> **IMPORTANT — the data is PRIVATE and is NOT distributed here.**
+> The original patient images (CBCT, MRI, CT) used to produce the shipped weights
+> are confidential and cannot be shared. This repository therefore includes **no
+> training data**. The shipped weights were trained on that private dataset, so to
+> use this method on your own images you must **retrain the model on your own data**
+> (or an anonymised dataset). Only the *expected data format* is documented below so
+> you can prepare your own dataset and train from scratch.
 
 ### 3.1 Raw 3D data (input to `prepare_data.py`)
 
@@ -204,6 +208,9 @@ resamples to the native CT grid, writing:
 
 ## 7. License & data notice
 
-The trained weights embed no patient data; the source patient images are **not**
-included and must be obtained separately. Please respect any institutional review
-board / data-sharing restrictions that apply to the original dataset.
+The trained weights embed no patient data; the source patient images are **private**
+and are **not** included. They must be obtained separately and are subject to any
+institutional review board / data-sharing restrictions that apply. **To apply this
+method to your own data, retrain the model on your own (or anonymised) dataset.**
+
+For questions about data availability or reuse, contact the corresponding author.
