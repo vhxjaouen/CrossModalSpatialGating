@@ -1,0 +1,10 @@
+torch>=1.13
+torchvision
+kornia>=0.6
+monai>=1.2
+nibabel
+numpy
+scikit-image
+scikit-learn
+imageio
+tqdm
