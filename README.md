@@ -5,9 +5,7 @@ This repository provides the code, model definitions and trained weights for the
 to **three co-registered CBCTs** and a **co-registered MRI** using an RRDB
 generator gated by **Large Separable Kernel Attention (LSKA)**.
 
-It is fully self-contained: no external (private) data is distributed, and the
-model code has been factored down to exactly what the experiments use (no
-unrelated networks are included).
+It is fully self-contained: no external (private) data is distributed.
 
 ---
 
